@@ -276,6 +276,61 @@ footer{
   nav{display:none}
   .hero-card{padding:60px 30px}
 }
+   /* =========================
+   BAG COMPARISON SECTION
+========================= */
+.comparison-intro{
+  max-width:700px;
+  margin:0 auto 60px;
+  text-align:center;
+}
+
+.comparison-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:35px;
+  margin-bottom:80px;
+}
+
+.comparison-card{
+  background:white;
+  padding:35px;
+  border-radius:30px;
+  box-shadow:var(--shadow);
+}
+
+.comparison-card h3{
+  color:var(--accent);
+  margin-bottom:12px;
+}
+
+.comparison-table{
+  overflow-x:auto;
+}
+
+.comparison-table table{
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+.comparison-table th,
+.comparison-table td{
+  padding:18px;
+  text-align:left;
+}
+
+.comparison-table thead{
+  background:var(--pink-soft);
+}
+
+.comparison-table tbody tr:not(:last-child){
+  border-bottom:1px solid #eee;
+}
+
 </style>
 </head>
 
@@ -435,6 +490,91 @@ In-Depth Women's Handbag Reviews • Style Reports • Buying Guides
         Crossbody bags excel at convenience. They are best suited for
         casual days, city outings, and travel scenarios.
       </p>
+    </div>
+
+  </div>
+</section>
+<section id="comparison">
+  <div class="container">
+    <h2>How to Choose the Right Handbag</h2>
+
+    <div class="comparison-intro">
+      <p>
+        Choosing the right handbag goes beyond appearance. A well-selected bag
+        should match your lifestyle, daily needs, and personal style. Below,
+        we break down the most important criteria to consider before purchasing.
+      </p>
+    </div>
+
+    <div class="comparison-grid">
+
+      <div class="comparison-card">
+        <h3>Size & Capacity</h3>
+        <p>
+          Consider what you carry daily. Tote bags offer generous space,
+          while crossbody bags prioritize lightness and essentials only.
+        </p>
+      </div>
+
+      <div class="comparison-card">
+        <h3>Material Quality</h3>
+        <p>
+          Leather provides durability and structure, while fabric and vegan
+          materials offer flexibility and lighter weight.
+        </p>
+      </div>
+
+      <div class="comparison-card">
+        <h3>Comfort & Wearability</h3>
+        <p>
+          Strap length, weight distribution, and accessibility directly
+          affect comfort — especially for long daily use.
+        </p>
+      </div>
+
+      <div class="comparison-card">
+        <h3>Style Versatility</h3>
+        <p>
+          Neutral tones and classic shapes transition easily between casual
+          and formal settings, maximizing value.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="comparison-table">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Bag Type</th>
+            <th>Best For</th>
+            <th>Capacity</th>
+            <th>Comfort</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Leather Tote</td>
+            <td>Work & Daily Carry</td>
+            <td>High</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>Crossbody</td>
+            <td>City & Travel</td>
+            <td>Low</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>Backpack Purse</td>
+            <td>Long Days</td>
+            <td>Medium</td>
+            <td>Very High</td>
+          </tr>
+        </tbody>
+      </table>
+
     </div>
 
   </div>
