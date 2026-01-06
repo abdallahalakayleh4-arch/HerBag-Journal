@@ -330,6 +330,18 @@ footer{
 .comparison-table tbody tr:not(:last-child){
   border-bottom:1px solid #eee;
 }
+/* Fix oversized report images */
+.report-card img {
+  max-height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+.report-details p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  color: #555;
+}
 
 </style>
 </head>
@@ -623,6 +635,7 @@ In-Depth Women's Handbag Reviews • Style Reports • Buying Guides
           Lightweight, minimal hardware, and soft curves make it a favorite
           for spring and summer styling. Best suited for light daily carry.
         </p>
+         
       </article>
 
       <article class="report-card">
@@ -652,6 +665,16 @@ In-Depth Women's Handbag Reviews • Style Reports • Buying Guides
           Designed for comfort-focused users who prefer slouchy forms.
           Excellent for casual outfits and everyday flexibility.
         </p>
+         <div class="report-details">
+  <p><strong>Overview:</strong> This handbag represents a balance between fashion and function, designed to meet daily lifestyle needs.</p>
+
+  <p><strong>Materials:</strong> Crafted from premium-grade leather or durable fabric blends, offering long-term wear resistance.</p>
+
+  <p><strong>Best For:</strong> Daily use, casual outings, office wear, and light travel.</p>
+
+  <p><strong>Verdict:</strong> A reliable and stylish option for users seeking elegance without sacrificing practicality.</p>
+</div>
+
       </article>
 
     </div>
