@@ -75,10 +75,56 @@ h1{
   padding:0 25px 30px;
   font-size:15px;
 }
+  .navbar {
+  background: #FBF6F3;
+  border-bottom: 1px solid #e6dede;
+  padding: 15px 0;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  color: #C48CA0;
+  font-size: 18px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #3A2F2F;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #C48CA0;
+}
+
 </style>
 </head>
 
 <body>
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">HerBag Journal</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="reports.html">Reports</a></li>
+    </ul>
+  </div>
+</nav>
 
 <header>
   <a href="index.html">← Back to Home</a>
