@@ -8,7 +8,7 @@
 <style>
 body{
   margin:0;
-  font-family:Arial, sans-serif;
+  font-family: Arial, sans-serif;
   background:#F6EFEA;
   color:#3A2F2F;
   line-height:1.8;
@@ -18,7 +18,7 @@ header{
   background:#FBF6F3;
   padding:20px;
   text-align:center;
-  border-bottom:1px solid #eee;
+  border-bottom:1px solid #e6dede;
 }
 
 header a{
@@ -28,36 +28,52 @@ header a{
 }
 
 .container{
-  max-width:1000px;
+  max-width:1100px;
   margin:60px auto;
   padding:0 20px;
 }
 
-.article-card{
-  background:#fff;
-  padding:30px;
-  border-radius:18px;
-  margin-bottom:40px;
-  box-shadow:0 10px 30px rgba(0,0,0,.08);
+h1{
+  text-align:center;
+  margin-bottom:60px;
 }
 
-.article-card h2{
+.article{
+  background:#fff;
+  border-radius:20px;
+  margin-bottom:40px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  overflow:hidden;
+}
+
+.article img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+}
+
+.article-header{
+  padding:25px;
+}
+
+.article-header h2{
   color:#C48CA0;
   margin-bottom:10px;
 }
 
-.article-card img{
-  width:100%;
-  max-height:260px;
-  object-fit:cover;
-  border-radius:14px;
-  margin:20px 0;
+.article-header button{
+  background:#C48CA0;
+  color:#fff;
+  border:none;
+  padding:10px 18px;
+  border-radius:20px;
+  cursor:pointer;
 }
 
-.article-card a{
-  color:#C48CA0;
-  font-weight:bold;
-  text-decoration:none;
+.article-content{
+  display:none;
+  padding:0 25px 30px;
+  font-size:15px;
 }
 </style>
 </head>
@@ -69,38 +85,51 @@ header a{
 </header>
 
 <div class="container">
+<h1>Handbag Reports & Buying Guides</h1>
 
-  <div class="article-card">
-    <h2>Leather Tote Bag — Full Review</h2>
-    <img src="https://images.unsplash.com/photo-1593032465175-481ac7f40161?auto=format&fit=crop&w=1200&q=80">
-    <p>
-      A detailed breakdown of design, materials, daily usability,
-      and long-term value of leather tote bags.
-    </p>
-    <a href="#">Read Full Article →</a>
-  </div>
-
-  <div class="article-card">
-    <h2>Crossbody Bag — Practical Review</h2>
-    <img src="https://images.unsplash.com/photo-1607082349566-1870b9d2a6c3?auto=format&fit=crop&w=1200&q=80">
-    <p>
-      A hands-on look at crossbody bags and why they remain a top
-      choice for everyday comfort.
-    </p>
-    <a href="#">Read Full Article →</a>
-  </div>
-
-  <div class="article-card">
-    <h2>Mini Handbag — Trend Analysis</h2>
-    <img src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=1200&q=80">
-    <p>
-      Exploring the rise of mini handbags and how they fit into
-      modern minimalist fashion.
-    </p>
-    <a href="#">Read Full Article →</a>
-  </div>
-
+<!-- TEMPLATE ARTICLE (1) -->
+<div class="article">
+<img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=1200&q=80">
+<div class="article-header">
+<h2>Leather Tote Bag</h2>
+<button onclick="toggle(this)">Read Full Report</button>
 </div>
+<div class="article-content">
+<p>
+Leather tote bags are among the most practical and enduring handbag styles available today.
+Designed with open interiors and sturdy handles, they cater to women who need space without sacrificing elegance.
+</p>
+<p>
+Most leather totes are crafted from full-grain or top-grain leather, offering durability and a refined texture.
+Over time, quality leather develops a natural patina, making each bag unique.
+The structure allows it to carry laptops, documents, makeup pouches, and daily essentials comfortably.
+</p>
+<p>
+This bag style is ideal for professionals, students, and busy lifestyles.
+Its neutral appearance makes it easy to pair with workwear or casual outfits.
+However, users should be mindful not to overload it, as weight can accumulate quickly.
+</p>
+<p>
+Overall, a leather tote bag is a reliable long-term investment for daily use.
+</p>
+</div>
+</div>
+
+<!-- COPY ARTICLES 2–20 (Different Bags) -->
+
+<script>
+function toggle(btn){
+  const content = btn.parentElement.nextElementSibling;
+  if(content.style.display==="block"){
+    content.style.display="none";
+    btn.innerText="Read Full Report";
+  }else{
+    content.style.display="block";
+    btn.innerText="Hide Report";
+  }
+}
+</script>
 
 </body>
 </html>
+
